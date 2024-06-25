@@ -1,0 +1,24 @@
+{
+    "name": "wongyip/html-icons",
+    "description": "HTMl Icons",
+    "license": "MIT",
+    "homepage": "https://github.com/wongyip/html-icons",
+    "authors": [
+        {
+            "name": "Wongyip",
+            "email": "wongyip@outlook.com",
+            "homepage": "https://github.com/wongyip"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "wongyip/html-tags": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wongyip\\HTML\\Icons\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+	"prefer-stable" : true
+}
