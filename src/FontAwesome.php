@@ -82,13 +82,27 @@ class FontAwesome extends TagAbstract implements ContentsOverride, IconTagInterf
     /**
      * @inheritdoc
      */
-    public function color(string $set = null): string|null|static
+    public function color(string|bool $set = null): string|null|static
     {
         if (is_null($set)) {
             return $this->iconColor ?? null;
         }
-        $this->iconColor = $set;
+        $this->iconColor = is_string($set) ? $set : ($set ? $this->colorAuto() : '');
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    private function colorAuto(): string
+    {
+        return match ($this->iconName) {
+            'file-excel'      => '#107C41',
+            'file-pdf'        => '#F20F00',
+            'file-powerpoint' => '#C43E1C',
+            'file-word'       => '#185ABD',
+            default           => '#333',
+        };
     }
 
     /**

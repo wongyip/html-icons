@@ -44,12 +44,13 @@ interface IconTagInterface
 
 
     /**
-     * Get or set the icon's color, input empty string to unset.
+     * Get or set the icon's color, input empty string or false to unset, input
+     * true for auto-color based on name.
      *
-     * @param string|null $set
+     * @param bool|string|null $set
      * @return string|static|null
      */
-    public function color(string $set = null): string|null|static;
+    public function color(bool|string $set = null): string|null|static;
 
     /**
      * Switch between fixed and variable width.
