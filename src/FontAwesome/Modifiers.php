@@ -147,7 +147,7 @@ trait Modifiers
     /**
      * @inheritdoc
      */
-    public function size(bool|int|string $set = null): bool|int|string|null|static
+    public function size(bool|int|string|null $set = null): bool|int|string|null|static
     {
         // Reset
         if (is_null($set)) {

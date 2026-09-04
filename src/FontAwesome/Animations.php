@@ -45,7 +45,7 @@ trait Animations
     /**
      * @inheritdoc
      */
-    public function animate(string|null $animation, array $parameters = null): string|null|static
+    public function animate(string|null $animation, array|null $parameters = null): string|null|static
     {
         if (is_null($animation)) {
             return $this->animation ?? null;

@@ -11,7 +11,7 @@ class Icon
      * @param string|null $makerClass
      * @return IconTagInterface
      */
-    public static function make(string $name, string $makerClass = null): IconTagInterface
+    public static function make(string $name, string|null $makerClass = null): IconTagInterface
     {
         /**
          * @var IconTagInterface|FontAwesome $makerClass

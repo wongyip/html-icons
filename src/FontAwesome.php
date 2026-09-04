@@ -82,7 +82,7 @@ class FontAwesome extends TagAbstract implements ContentsOverride, IconTagInterf
     /**
      * @inheritdoc
      */
-    public function color(string|bool $set = null): string|null|static
+    public function color(string|bool|null $set = null): string|null|static
     {
         if (is_null($set)) {
             return $this->iconColor ?? null;
@@ -108,7 +108,7 @@ class FontAwesome extends TagAbstract implements ContentsOverride, IconTagInterf
     /**
      * @inheritdoc
      */
-    public function icon(string $set = null): string|null|static
+    public function icon(string|null $set = null): string|null|static
     {
         if (is_null($set)) {
             return $this->iconName;
@@ -128,7 +128,7 @@ class FontAwesome extends TagAbstract implements ContentsOverride, IconTagInterf
     /**
      * @inheritDoc
      */
-    public function attributes(array $attributes = null, bool $withDataAttrs = null) : array|static
+    public function attributes(array|null $attributes = null, bool|null $withDataAttrs = null): array|static
     {
         // Extended getter.
         if (is_null($attributes)) {

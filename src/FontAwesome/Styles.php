@@ -49,7 +49,7 @@ trait Styles
      *
      * @inheritdoc
      */
-    public function font(string $set = null): string|null|static
+    public function font(string|null $set = null): string|null|static
     {
         if (is_null($set)) {
             return $this->iconStyle ?? self::STYLE_DEFAULT;

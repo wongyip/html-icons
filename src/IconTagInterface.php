@@ -26,7 +26,7 @@ interface IconTagInterface
      * @param array|null $parameters
      * @return string|null|static
      */
-    public function animate(string|null $animation, array $parameters = null): string|null|static;
+    public function animate(string|null $animation, array|null $parameters = null): string|null|static;
 
 //    /**
 //     * Switch icon to duotone style.
@@ -50,7 +50,7 @@ interface IconTagInterface
      * @param bool|string|null $set
      * @return string|static|null
      */
-    public function color(bool|string $set = null): string|null|static;
+    public function color(bool|string|null $set = null): string|null|static;
 
     /**
      * Switch between fixed and variable width.
@@ -89,7 +89,7 @@ interface IconTagInterface
      * @param string|null $set
      * @return string|null|static
      */
-    public function font(string $set = null): string|null|static;
+    public function font(string|null $set = null): string|null|static;
 
     /**
      * Get or set the name of the icon.
@@ -97,7 +97,7 @@ interface IconTagInterface
      * @param string|null $set
      * @return string|null|static
      */
-    public function icon(string $set = null): string|null|static;
+    public function icon(string|null $set = null): string|null|static;
 
 //    /**
 //     * Switch icon to light style.
@@ -163,7 +163,7 @@ interface IconTagInterface
      * @param bool|int|string|null $set
      * @return bool|int|string|IconTagInterface|null
      */
-    public function size(bool|int|string $set = null): bool|int|string|null|static;
+    public function size(bool|int|string|null $set = null): bool|int|string|null|static;
 
 //    /**
 //     * Switch icon to solid style.
